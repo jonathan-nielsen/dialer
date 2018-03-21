@@ -1,0 +1,3 @@
+<div class="jumbotron">
+  <p>Trying to fetch user with id <b><%= @id %></b>...</p>
+</div>
