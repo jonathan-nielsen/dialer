@@ -26,6 +26,12 @@ defmodule DialerWeb.Router do
   scope "/api", DialerWeb do
     pipe_through :api
 
-    resources "/user", UserController, except: [:index, :show, :edit]
+    resources "/user", UserController, only: [:index, :show]
+
+    scope "/admin", DialerWeb do
+      pipe_through [:auth, :ensure_admin, :api]
+
+      resources "/posts", UserController
+    end
   end
 end
