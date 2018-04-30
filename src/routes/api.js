@@ -30,7 +30,7 @@ router.get('/api/:type', async(req, res) => {
 
 router.get('/api/:type/:id', async(req, res) => {
 	try {
-		const result = await types[req.params.type].findById(req.params.id).select('-password');
+		const result = await types[req.params.type].findById(req.params.id);
 
 		res.json(result);
 	} catch (err) {

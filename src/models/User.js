@@ -46,7 +46,7 @@ schema.statics.authenticate = async function({ email, password }) {
 	}
 
 	if (!user) {
-		const err = new Error('Email or password was wrong.');
+		const err = new Error('Email or password didn\'t match, try again.');
 		err.status = 401;
 		log(err);
 		throw err;
@@ -58,7 +58,7 @@ schema.statics.authenticate = async function({ email, password }) {
 		if (result === true) {
 			return user;
 		} else {
-			const err = new Error('Email or password was wrong.');
+			const err = new Error('Email or password didn\'t match, try again.');
 			err.status = 401;
 			log(err);
 			throw err;

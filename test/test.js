@@ -59,31 +59,12 @@ function testCodeAndLocation(path) {
 				if (redirect) {
 					expect(response.header.location).to.equal(path.expect.location);
 				}
+				
 				done();
 			});
 		});
 	});
 }
-
-describe('API', () => {
-	describe('GET /api/user', () => {
-		it('Should return an array', done => {
-			req.get('/api/user').end((err, response) => {
-				expect(response.body).to.be.an('array').that.does.not.include('password');
-				done();
-			});
-		});
-	});
-
-	describe('GET /api/user/5ada6b18dac3c7cacc6dbd12', () => {
-		it('Should return an object and should not include password property', done => {
-			req.get('/api/user/5ada6b18dac3c7cacc6dbd12').end((err, response) => {
-				expect(response.body).to.be.an('object').that.does.not.have.property('password');
-				done();
-			});
-		});
-	});
-});
 
 after(() => {
 	app.emit('close');

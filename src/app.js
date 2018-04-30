@@ -18,6 +18,7 @@ import * as routes from './routes';
 const app = express();
 const dbUrl = `mongodb://${process.env.DB_URL}:${process.env.DB_PORT}/${process.env.DB_NAME}`;
 
+app.use(express.static('public'));
 app.set('trust proxy', 1);
 app.use(session({
 	secret: process.env.SECRET,

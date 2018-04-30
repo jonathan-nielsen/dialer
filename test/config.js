@@ -44,15 +44,5 @@ export default {
 				location: '/home',
 			},
 		}],
-
-		
-		api: [{
-			url: '/api/user',
-			method: 'get',
-			expect: {
-				type: 'array',
-				notInclude: 'password'
-			}
-		}]
-	}
+	},
 };

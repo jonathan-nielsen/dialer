@@ -51,13 +51,6 @@ module.exports = {
 		'array-callback-return': 'error',
 		'no-array-constructor': 'error',
 		'no-plusplus': 'error',
-		'no-console': [
-			'error', {
-				'allow': [
-					'warn',
-					'error'
-				]
-			}
-		]
+		'no-console': 'error',
 	}
 };
