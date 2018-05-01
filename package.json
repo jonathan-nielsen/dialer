@@ -46,6 +46,7 @@
 		"mongoose-unique-validator": "^2.0.0",
 		"react": "^16.3.2",
 		"react-dom": "^16.3.2",
+		"socket.io": "^2.1.0",
 		"twilio": "^3.15.1"
 	}
 }

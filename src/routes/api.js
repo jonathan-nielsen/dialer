@@ -2,11 +2,13 @@ import express from 'express';
 import debug from 'debug';
 
 import User from 'models/User';
+import Number from 'models/Number';
 
 const router = express.Router();
 const log = debug('routes:api');
 const types = {
-	user: User,
+	users: User,
+	numbers: Number,
 };
 
 router.all('/api/*', (req, res, next) => {

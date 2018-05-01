@@ -72,15 +72,15 @@
 		console.log('Could not get a token from server!');
 	});
 
-	$buttonCall.click(() => {
-		console.log(`Calling ${number.value}...`);
-		Twilio.Device.connect({ To: number.value });
-	});
+	// $buttonCall.click(() => {
+	// 	console.log(`Calling ${number.value}...`);
+	// 	Twilio.Device.connect({ To: number.value });
+	// });
 
-	$buttonHangup.click(() => {
-		console.log('Hanging up...');
-		Twilio.Device.disconnectAll();
-	});
+	// $buttonHangup.click(() => {
+	// 	console.log('Hanging up...');
+	// 	Twilio.Device.disconnectAll();
+	// });
 
 	$refreshDevices.click(() => {
 		console.log('Refreshing devices.');

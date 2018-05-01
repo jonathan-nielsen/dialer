@@ -4,7 +4,6 @@ import Twilio from 'twilio';
 
 const router = express.Router();
 const log = debug('routes:call');
-const client = new Twilio(process.env.TWILIO_SID, process.env.TWILIO_TOKEN);
 const { VoiceResponse } = Twilio.twiml;
 
 router.post('/voice', voice);
