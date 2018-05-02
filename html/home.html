@@ -2,11 +2,15 @@
 <html>
 
 <head>
-	<title>Twilio Client Quickstart</title>
-	<link rel="stylesheet" type="text/css" href="/style.css"> </head>
+	<title>Dialer</title>
+	<link rel="stylesheet" type="text/css" href="/style.css">
+</head>
 
 <body>
-	<div>Client name: <b class="client"></b></div>
+	<div>
+		Client name:
+		<b class="client"></b>
+	</div>
 	<div class="devices">
 		<h3>Ringtone Devices</h3>
 		<select class="device ringtone" multiple></select>
@@ -18,7 +22,6 @@
 	</div>
 	<div class="controls">
 		<p class="instructions">Make a Call:</p>
-		<!-- <input class="number" type="text" placeholder="Enter a phone # or client name" /> -->
 		<button class="button call">Call</button>
 		<button class="button hangup">Hangup</button>
 		<div class="indicators">
@@ -28,10 +31,9 @@
 			<div class="volume output"></div>
 		</div>
 	</div>
-	<!-- <div>
-		<button class="emit-button">Emit some value</button>
-	</div> -->
-	<div class="logout"> <a href="/logout">Logout</a> </div>
+	<div class="logout">
+		<a href="/logout">Logout</a>
+	</div>
 	<script src="/twilio.min.js"></script>
 	<script src="/jquery-3.3.1.min.js"></script>
 	<script src="/script.js"></script>
@@ -48,6 +50,7 @@
 	socket.on('connect-call', function(msg) {
 		console.log(msg);
 	});
+
 	</script>
 </body>
 

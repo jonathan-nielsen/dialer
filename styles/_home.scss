@@ -1,0 +1,31 @@
+.controls,
+.button.hangup,
+.indicators,
+.output {
+	display: none;
+}
+
+.volume {
+	background-color: #000;
+	height: 4px;
+}
+
+.volume.low {
+	background-color: #4cda5f;
+}
+
+.volume.medium {
+	background-color: #f1db36;
+}
+
+.volume.high {
+	background-color: #f13636;
+}
+
+h3 {
+	margin-bottom: 4px;
+}
+
+.logout {
+	margin-top: 20px;
+}
