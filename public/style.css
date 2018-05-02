@@ -63,8 +63,9 @@ h6 {
   flex: 1; }
 
 .login-intro {
-  background-image: url("/img/login-bg.jpg");
-  background-size: cover;
+  background-image: url("/img/login-bg.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
   background-position: bottom;
   position: relative;
   color: #fff;
@@ -74,7 +75,7 @@ h6 {
   .login-intro::after {
     content: '';
     position: absolute;
-    opacity: .95;
+    opacity: .9;
     top: 0;
     right: 0;
     bottom: 0;
@@ -96,7 +97,7 @@ h6 {
         height: 1px;
         background-color: #fff;
         width: 60px;
-        margin-top: 1rem; }
+        margin-top: 2rem; }
     .login-intro .text .intro {
       margin: 0; }
 
@@ -108,7 +109,7 @@ h6 {
   .login-form .form {
     flex: 1;
     padding: 2rem;
-    box-shadow: -2px 2px 0.5rem 0px rgba(0, 0, 0, 0.125); }
+    box-shadow: -2px 2px 0.5rem 0px rgba(0, 0, 0, 0.1); }
   .login-form .extra .button {
     color: #000;
     text-decoration: none; }
@@ -150,13 +151,13 @@ h6 {
 .form-group button[type="submit"] {
   -webkit-appearance: none;
   padding: .5rem;
-  background-color: #92797c;
+  background-color: #a5887c;
   color: #fff;
   transition: background-color .2s ease-out;
   width: 100%;
-  border: 1px solid #856c6f;
+  border: 1px solid #9b7a6d;
   outline: 0; }
   .form-group button[type="submit"]:hover {
     cursor: pointer;
-    background-color: #776164;
-    border-color: #695558; }
+    background-color: #8d6e61;
+    border-color: #7e6257; }
