@@ -103,13 +103,11 @@ h6 {
 
 .login-form {
   display: flex;
-  padding: 8rem 4rem;
+  padding: 8rem 6rem;
   background-color: #fff;
   flex-direction: column; }
   .login-form .form {
-    flex: 1;
-    padding: 2rem;
-    box-shadow: -2px 2px 0.5rem 0px rgba(0, 0, 0, 0.1); }
+    flex: 1; }
   .login-form .extra .button {
     color: #000;
     text-decoration: none; }
